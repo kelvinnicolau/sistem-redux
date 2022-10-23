@@ -38,12 +38,13 @@ export default function Home() {
           <strong>{trip.title}</strong>
           <span>Status: {trip.status ? 'Disponível' : 'Indisponível'}</span>
         
-          <button type="button"
-          onClick={() => handleAdd(trip) }>
+          <button 
+          type="button"
+          onClick={() => handleAdd(trip) }
+          >
             <div>
               <MdFlightTakeoff size={16} color="#FFF"/>
             </div>
-
             <span>SOLICITAR RESERVA</span>
           </button>
         </li>
